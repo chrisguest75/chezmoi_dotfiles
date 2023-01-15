@@ -2,14 +2,14 @@
 
 Template dotfiles repository, managed with [chezmoi](https://chezmoi.io/).
 
-TODO:
+This is not completed yet TODO:
 
 * Install in container (add ssh)
 * Clone and configure zsh.
 * brewfile
 * apt installs - package lists
 * powerlevel10k
-
+* Want it to work on mac, windows and linux
 
 ## Steps
 
@@ -18,7 +18,7 @@ TODO:
 1) Install `chezmoi` [Instructions Here](https://www.chezmoi.io/install/)  
 
 
-NOTE: To access this folder on windows in code you'll need to install remote development extension.  
+NOTE: To access this folder on windows in `vscode` you'll need to install remote development extension.  
 
 ```sh
 cd .local/share/chezmoi
@@ -27,17 +27,13 @@ chezmoi cd
 
 # debug issues
 chezmoi doctor
-
-
 ```
 
 ## Adding files
 
 ```sh
 chezmoi --debug diff
-
 ```
-
 
 ## Resources
 
@@ -61,6 +57,8 @@ https://code.visualstudio.com/docs/remote/wsl
 
 https://www.chezmoi.io/user-guide/use-scripts-to-perform-actions/
 
+
+* Managing Dotfiles With Chezmoi [here](https://budimanjojo.com/2021/12/13/managing-dotfiles-with-chezmoi/)
 
 ### Examples 
 
