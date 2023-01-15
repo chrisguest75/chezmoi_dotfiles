@@ -14,6 +14,10 @@ docker run --rm -it --name test_chezmoi --entrypoint /bin/zsh test_chezmoi
 docker exec -it test_chezmoi /bin/zsh   
 ```
 
+```sh
+docker run --rm -it -v $(git root)/../:/root/.local/share/chezmoi  --name test_chezmoi --entrypoint /bin/zsh test_chezmoi
+```
+
 ## 💻 Zsh
 
 ```sh

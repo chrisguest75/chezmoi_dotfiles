@@ -1,4 +1,5 @@
 .github/
+tests
 install.sh
 LICENSE
 README.md

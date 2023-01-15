@@ -15,6 +15,7 @@ COPY --chmod=755 <<EOF /bin/install.sh
 sh -c "\$(curl -fsLS get.chezmoi.io)"
 echo "hello world"
 chezmoi init https://github.com/chrisguest75/chezmoi_dotfiles.git
+chezmoi apply
 EOF
 
 RUN /bin/install.sh
