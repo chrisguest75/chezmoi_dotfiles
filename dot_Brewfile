@@ -32,7 +32,7 @@ brew 'tmuxinator'
 brew "newt"
 brew 'htop'
 
-
+brew "romkatv/powerlevel10k/powerlevel10k"
 
 brew 'awscli'
 
@@ -58,18 +58,11 @@ brew 'ffmpeg'
 
 # Apps
 cask '1password'
-cask 'docker'
-cask 'virtualbox'
-cask 'virtualbox-extension-pack'
-cask 'google-chrome'
-cask 'iterm2'
 cask 'font-hack-nerd-font'
 cask 'keepassx'
 cask 'keybase' 
 cask 'homebrew/cask/docker'
 cask 'google-chrome'
-cask 'iterm2'
-cask 'spectacle'
 cask 'vagrant'
 cask 'vlc'
 cask 'hex-fiend'
@@ -83,3 +76,9 @@ cask 'onedrive'
 cask 'microsoft-remote-desktop'
 cask 'zoom'
 
+
+cask 'virtualbox'
+cask 'virtualbox-extension-pack'
+cask 'google-chrome'
+cask 'iterm2'
+cask 'spectacle'
