@@ -1,0 +1,30 @@
+brew 'bash'
+brew 'zsh'
+brew 'zsh-completions'
+brew 'shellcheck'
+brew 'bats-core'
+
+brew 'git'
+brew 'gh'
+brew 'git-extras'
+brew 'gpg'
+
+brew 'imagemagick'
+
+brew 'jq'
+brew 'yq'
+
+brew 'dive'
+brew 'container-diff'
+brew 'container-structure-test'
+
+brew 'ssh-copy-id'
+brew 'watch'
+brew 'wget'
+brew 'curl'
+
+brew 'tmux'
+brew 'tmuxinator'    
+
+brew "romkatv/powerlevel10k/powerlevel10k"
+
