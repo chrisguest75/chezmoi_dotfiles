@@ -5,6 +5,8 @@ Template dotfiles repository, managed with [chezmoi](https://chezmoi.io/).
 This is not completed yet TODO:
 
 * Install in container (add ssh)
+* Powershell with oh-my-posh
+* Devcontainer
 * Clone and configure zsh.
 * brewfile
 * apt installs - package lists
