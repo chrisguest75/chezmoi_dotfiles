@@ -6,7 +6,8 @@ TODO:
 
 * Clone and configure zsh.
 * brewfile
-* apt installs
+* apt installs - package lists
+* powerlevel9k
 
 
 ## Steps
@@ -53,6 +54,7 @@ https://kolv.in/posts/dotfile-managment
 Homebrew
 
 
+### Examples 
 
 https://github.com/kolvin/dotfiles
 https://github.com/twpayne/dotfiles

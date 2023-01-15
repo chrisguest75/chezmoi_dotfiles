@@ -1,32 +1,10 @@
 tap 'homebrew/cask-fonts'
 
-
-# missing 
-# oh-my-zsh
-
-# o365
-# ms remote desktop 
-# vault
-
-
 brew 'bash'
-
 brew 'zsh'
 brew 'zsh-completions'
-
 brew 'shellcheck'
 brew 'bats-core'
-brew 'ssh-copy-id'
-brew 'watch'
-brew 'wget'
-brew 'curl'
-brew 'htop'
-
-# whiptail
-brew "newt"
-
-brew 'tmux'
-brew 'tmuxinator'    
 
 brew 'git'
 brew 'gh'
@@ -42,26 +20,35 @@ brew 'dive'
 brew 'container-diff'
 brew 'container-structure-test'
 
+brew 'ssh-copy-id'
+brew 'watch'
+brew 'wget'
+brew 'curl'
+
+brew 'tmux'
+brew 'tmuxinator'    
+
+# whiptail
+brew "newt"
+brew 'htop'
+
+
+
 brew 'awscli'
-brew 'aws-okta'
 
 brew 'tfenv'
 brew 'terraform-docs'
-brew 'checkov'
-brew 'terraform_landscape'
 
 brew 'kubectx'
 brew 'skaffold'
 brew 'kubernetes-cli'
 brew 'kind'
 brew 'kubernetes-helm'
-#brew 'kuttl-cli'
 
 brew 'pyenv'
 brew 'pipenv'
 
 brew 'nvm'
-brew 'circleci'
 brew 'nmap'
 brew 'youtube-dl'
 brew 'gomplate'
