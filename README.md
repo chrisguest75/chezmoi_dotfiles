@@ -41,7 +41,7 @@ chezmoi --debug diff
 
 *  Cloned from chezmoi/dotfiles [here](https://github.com/chezmoi/dotfiles)
 
-
+https://jerrynsh.com/how-to-manage-dotfiles-with-chezmoi/
 
 https://www.chezmoi.io/user-guide/machines/windows/
 
