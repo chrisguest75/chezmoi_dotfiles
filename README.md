@@ -12,8 +12,19 @@ This is not completed yet TODO:
 * apt installs - package lists
 * powerlevel10k
 * Want it to work on mac, windows and linux
+* Get it working inside a WSL distro (how to handle sudo for apt)
+
+NOTES:
 
 ## Steps
+
+## Steps (wsl)
+
+```sh
+./install.sh
+```
+
+## Steps (local)
 
 1) Install `homebrew` [Instructions Here](https://brew.sh/
 ) and [Configuration Here](https://docs.brew.sh/Homebrew-on-Linux)  
@@ -40,26 +51,13 @@ chezmoi --debug diff
 ## Resources
 
 *  Cloned from chezmoi/dotfiles [here](https://github.com/chezmoi/dotfiles)
-
-https://jerrynsh.com/how-to-manage-dotfiles-with-chezmoi/
-
-https://www.chezmoi.io/user-guide/machines/windows/
-
-https://www.chezmoi.io/user-guide/setup/#understand-chezmois-files-and-directories
-
-https://kolv.in/posts/dotfile-managment
-
-Homebrew
-
-https://github.com/romkatv/powerlevel10k#meslo-nerd-font-patched-for-powerlevel10k
-
-
-https://code.visualstudio.com/docs/remote/wsl
-
-
-https://www.chezmoi.io/user-guide/use-scripts-to-perform-actions/
-
-
+* How To Manage Dotfiles With Chezmoi [here](https://jerrynsh.com/how-to-manage-dotfiles-with-chezmoi/)
+* Detect Windows Subsystem for Linux (WSL) [here](https://www.chezmoi.io/user-guide/machines/windows/)
+* Understand chezmoi's files and directories [here](https://www.chezmoi.io/user-guide/setup/#understand-chezmois-files-and-directories)
+* Shit Hot Dotfiles [here](https://kolv.in/posts/dotfile-managment)
+* Meslo Nerd Font patched for Powerlevel10k [here](https://github.com/romkatv/powerlevel10k#meslo-nerd-font-patched-for-powerlevel10k)
+* Developing in WSL [here](https://code.visualstudio.com/docs/remote/wsl)
+* Use scripts to perform actions [here](https://www.chezmoi.io/user-guide/use-scripts-to-perform-actions/) 
 * Managing Dotfiles With Chezmoi [here](https://budimanjojo.com/2021/12/13/managing-dotfiles-with-chezmoi/)
 
 ### Examples 
