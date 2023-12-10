@@ -1,0 +1,64 @@
+tap 'romkatv/powerlevel10k'
+
+
+brew 'zsh'
+brew 'zsh-completions'
+
+brew 'shellcheck'
+brew 'bats-core'
+brew 'gh'
+brew 'git-extras'
+
+# ensure later versions 
+brew 'bash'
+brew 'wget'
+brew 'curl'
+brew 'htop'
+brew 'btop'
+brew 'bmon'
+
+brew 'tmux'
+brew 'tmuxinator'    
+
+brew 'git'
+
+brew 'imagemagick'
+
+brew 'jq'
+brew 'yq'
+
+brew 'dive'
+brew 'container-diff'
+brew 'container-structure-test'
+
+brew 'awscli'
+
+brew 'tfenv'
+brew 'terraform-docs'
+
+brew 'kubectx'
+brew 'skaffold'
+brew 'kubernetes-cli'
+brew 'kubernetes-helm'
+
+brew 'pyenv'
+brew 'pipenv'
+
+brew 'nvm'
+
+brew 'nmap'
+
+brew 'ffmpeg'
+
+brew 'glab'
+brew 'hurl'
+
+brew 'gpg'
+brew 'ssh-copy-id'
+brew 'watch'
+
+brew "romkatv/powerlevel10k/powerlevel10k"
+
+brew 'kind'
+brew 'youtube-dl'
+brew 'gomplate'
