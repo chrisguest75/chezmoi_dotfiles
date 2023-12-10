@@ -4,27 +4,28 @@ Template dotfiles repository, managed with [chezmoi](https://chezmoi.io/).
 
 This is not completed yet TODO:
 
-* Install in container (add ssh)
+* Change shell to zsh
+* nvm working
 * Powershell with oh-my-posh
+* Install in container (add ssh)
 * Devcontainer
-* Clone and configure zsh.
-* brewfile
-* apt installs - package lists
 * powerlevel10k
 * Want it to work on mac, windows and linux
-* Get it working inside a WSL distro (how to handle sudo for apt)
+* Secrets
 
-NOTES:
+## Testing
+
+REF: Installing distros for testing [chrisguest75/sysadmin_examples/34_WSL/INSTALL_DISTRO.md](https://github.com/chrisguest75/sysadmin_examples/blob/master/34_WSL/INSTALL_DISTRO.md)  
 
 ## Steps
 
-## Steps (wsl)
+### Steps (wsl)
 
 ```sh
 ./install.sh
 ```
 
-## Steps (local)
+### Steps (local)
 
 1) Install `homebrew` [Instructions Here](https://brew.sh/
 ) and [Configuration Here](https://docs.brew.sh/Homebrew-on-Linux)  
@@ -59,6 +60,10 @@ chezmoi --debug diff
 * Developing in WSL [here](https://code.visualstudio.com/docs/remote/wsl)
 * Use scripts to perform actions [here](https://www.chezmoi.io/user-guide/use-scripts-to-perform-actions/) 
 * Managing Dotfiles With Chezmoi [here](https://budimanjojo.com/2021/12/13/managing-dotfiles-with-chezmoi/)
+
+Using it to deploy software?
+https://github.com/twpayne/chezmoi/discussions/1733
+
 
 ### Examples 
 

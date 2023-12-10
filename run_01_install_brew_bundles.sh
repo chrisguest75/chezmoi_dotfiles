@@ -16,5 +16,6 @@ test -f /usr/local/bin/brew && eval "$(/usr/local/bin/brew shellenv)"
 export HOMEBREW_BUNDLE_FILE="$HOME/.BrewfileContainer"
 export HOMEBREW_BUNDLE_NO_LOCK=true
 
+brew tap romkatv/powerlevel10k
 # Install brew bundles
 brew bundle install

@@ -8,5 +8,5 @@ echo "***********************************"
 
 # NOTE: Will require sudo
 DEBIAN_FRONTEND=noninteractive \
-    apt-get update && \
-    apt-get install --yes build-essential procps curl file git
+    sudo apt-get update && \
+    sudo apt-get install --yes build-essential procps curl file git
