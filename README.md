@@ -23,8 +23,6 @@ NOTES:
 
 TODO:
 
-* nvm working
-* Powershell with oh-my-posh
 * Vscode extensions
 * choco software.
 * Install in container (add ssh)

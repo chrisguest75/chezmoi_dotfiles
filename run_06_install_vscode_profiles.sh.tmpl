@@ -1,4 +1,4 @@
-{{ if (eq .chezmoi.os "darwin" "windwos") -}}
+{{ if (eq .chezmoi.os "darwin") -}}
 #!/bin/bash
 set -eu
 
@@ -6,17 +6,10 @@ echo "***********************************"
 echo "** Install VSCode Extension"
 echo "***********************************"
 
-{{ $extensions := list
+pushd ./vscode
+./install_profile.sh --profile=chrisguest75 --install
 
-
- -}}
-
-#!/bin/bash
-
-set -eufo pipefail
-
-{{ range $extensions -}}
-code --force --install-extension {{ . }}
-{{ end -}}
+#./install_profile.sh --profile=work --install
+popd
 
 {{- end }}
