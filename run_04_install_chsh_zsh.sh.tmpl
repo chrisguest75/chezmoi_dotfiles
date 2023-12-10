@@ -1,0 +1,15 @@
+{{ if (eq .chezmoi.os "darwin" "linux") -}}
+#!/bin/bash
+set -eu
+
+ZSH_BIN_PATH=/home/linuxbrew/.linuxbrew/Cellar/zsh/5.9/bin/zsh 
+
+echo "***********************************"
+echo "** Chsh $ZSH_BIN_PATH"
+echo "***********************************"
+
+# TODO: THIS NEEDS FIXING TO NOT BE HARDCODED
+echo $ZSH_BIN_PATH | sudo tee -a /etc/shells
+chsh --shell $ZSH_BIN_PATH
+
+{{- end }}

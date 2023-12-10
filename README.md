@@ -2,14 +2,19 @@
 
 Template dotfiles repository, managed with [chezmoi](https://chezmoi.io/).
 
-This is not completed yet TODO:
+NOTES:
 
-* Change shell to zsh
+* Handles all major platforms; Linux, Windows, WSL and Darwin.
+* Be careful when writing templates that they still shebangs.  
+
+TODO:
+
 * nvm working
 * Powershell with oh-my-posh
+* Vscode extensions
+* choco software.
 * Install in container (add ssh)
 * Devcontainer
-* powerlevel10k
 * Want it to work on mac, windows and linux
 * Secrets
 
@@ -23,6 +28,11 @@ REF: Installing distros for testing [chrisguest75/sysadmin_examples/34_WSL/INSTA
 
 ```sh
 ./install.sh
+
+# show data (this is the data structure that you can make decisions on)
+/home/chrisguest/.local/bin/chezmoi data
+
+/home/chrisguest/.local/bin/chezmoi data | jq .chezmoi
 ```
 
 ### Steps (local)
@@ -63,6 +73,8 @@ chezmoi --debug diff
 
 Using it to deploy software?
 https://github.com/twpayne/chezmoi/discussions/1733
+
+https://learn.microsoft.com/en-us/linux/packages#how-to-use-the-gpg-repository-signing-key
 
 
 ### Examples 

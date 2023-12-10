@@ -1,0 +1,21 @@
+{{ if eq .chezmoi.os "linux" -}}
+#!/bin/bash
+set -eu
+
+## TODO: How do I set WSL flag in data?
+
+{{   if (.chezmoi.kernel.osrelease | lower | contains "microsoft") }}
+    # WSL-specific code
+    echo "**************************************************************"
+    echo "** Installing WSL "
+    echo "**************************************************************"
+
+{{   end }}
+{{ end }}
+
+{{ if (eq .chezmoi.os "darwin") -}}
+    echo "**************************************************************"
+    echo "** Installing Darwin"
+    echo "**************************************************************"
+
+{{- end }}

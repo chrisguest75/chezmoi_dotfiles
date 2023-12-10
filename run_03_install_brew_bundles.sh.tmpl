@@ -1,5 +1,5 @@
+{{ if (eq .chezmoi.os "darwin" "linux") -}}
 #!/bin/bash
-#. ./.profile
 set -eu
 
 echo "***********************************"
@@ -19,3 +19,4 @@ export HOMEBREW_BUNDLE_NO_LOCK=true
 brew tap romkatv/powerlevel10k
 # Install brew bundles
 brew bundle install
+{{- end }}

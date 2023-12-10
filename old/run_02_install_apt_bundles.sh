@@ -1,3 +1,4 @@
+{{ if (eq .chezmoi.os "darwin" "linux") -}}
 #!/usr/bin/env bash 
 #Use !/bin/bash -x  for debugging 
 #set -euf -o pipefail
@@ -51,3 +52,4 @@ echo "***********************************"
 
 # #apt install virtualbox -y
 # #apt install virtualbox-ext-pack -y   
+{{- end }}

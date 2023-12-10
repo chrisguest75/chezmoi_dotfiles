@@ -1,0 +1,24 @@
+{{ if (eq .chezmoi.os "darwin" "linux") -}}
+#!/bin/bash
+set -eu
+
+echo "***********************************"
+echo "** Install VSCode Extension"
+echo "***********************************"
+
+{{ $extensions := list
+
+
+ -}}
+
+#!/bin/bash
+
+set -eufo pipefail
+
+{{ range $extensions -}}
+code --force --install-extension {{ . }}
+{{ end -}}
+
+{{ end -}}
+
+{{- end }}

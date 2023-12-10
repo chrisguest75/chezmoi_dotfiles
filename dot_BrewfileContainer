@@ -54,4 +54,4 @@ brew 'gpg'
 brew 'ssh-copy-id'
 brew 'watch'
 
-#brew "romkatv/powerlevel10k/powerlevel10k"
+brew "romkatv/powerlevel10k/powerlevel10k"
