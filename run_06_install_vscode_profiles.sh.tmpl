@@ -1,4 +1,4 @@
-{{ if (eq .chezmoi.os "darwin" "linux") -}}
+{{ if (eq .chezmoi.os "darwin" "windwos") -}}
 #!/bin/bash
 set -eu
 
@@ -17,8 +17,6 @@ set -eufo pipefail
 
 {{ range $extensions -}}
 code --force --install-extension {{ . }}
-{{ end -}}
-
 {{ end -}}
 
 {{- end }}

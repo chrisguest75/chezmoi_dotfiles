@@ -32,4 +32,10 @@ sudo apt-get update
 echo "** Install PowerShell"
 sudo apt-get install -y powershell
 
+# requires brew 
+brew install jandedobbeleer/oh-my-posh/oh-my-posh
+
+# install terminal icons
+pwsh  -NoProfile -ExecutionPolicy Bypass -Command "Install-Module -Name Terminal-Icons -Repository PSGallery"
+
 {{- end }}

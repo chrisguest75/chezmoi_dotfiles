@@ -2,6 +2,20 @@
 
 Template dotfiles repository, managed with [chezmoi](https://chezmoi.io/).
 
+## Contents
+
+- [dotfiles](#dotfiles)
+  - [Contents](#contents)
+  - [Testing](#testing)
+  - [Steps](#steps)
+    - [Steps (windows)](#steps-windows)
+    - [Steps (wsl)](#steps-wsl)
+    - [Steps (local)](#steps-local)
+  - [Adding files](#adding-files)
+  - [Resources](#resources)
+    - [Examples](#examples)
+  - [License](#license)
+
 NOTES:
 
 * Handles all major platforms; Linux, Windows, WSL and Darwin.
@@ -23,6 +37,12 @@ TODO:
 REF: Installing distros for testing [chrisguest75/sysadmin_examples/34_WSL/INSTALL_DISTRO.md](https://github.com/chrisguest75/sysadmin_examples/blob/master/34_WSL/INSTALL_DISTRO.md)  
 
 ## Steps
+
+### Steps (windows)
+
+```powershell
+choco install chezmoi
+```
 
 ### Steps (wsl)
 
@@ -61,7 +81,8 @@ chezmoi --debug diff
 
 ## Resources
 
-*  Cloned from chezmoi/dotfiles [here](https://github.com/chezmoi/dotfiles)
+* Documentation for Chezmoi [here](https://www.chezmoi.io/)  
+* Cloned from chezmoi/dotfiles [here](https://github.com/chezmoi/dotfiles)
 * How To Manage Dotfiles With Chezmoi [here](https://jerrynsh.com/how-to-manage-dotfiles-with-chezmoi/)
 * Detect Windows Subsystem for Linux (WSL) [here](https://www.chezmoi.io/user-guide/machines/windows/)
 * Understand chezmoi's files and directories [here](https://www.chezmoi.io/user-guide/setup/#understand-chezmois-files-and-directories)
