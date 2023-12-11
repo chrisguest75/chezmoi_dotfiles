@@ -129,3 +129,7 @@ source /home/linuxbrew/.linuxbrew/opt/powerlevel10k/share/powerlevel10k/powerlev
 #[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 source /home/linuxbrew/.linuxbrew/opt/git-extras/share/git-extras/git-extras-completion.zsh
+
+alias code="echo 'Use code@work or code@chris for required profiles'"
+alias code@work="/mnt/c/Program\ Files/Microsoft\ VS\ Code/bin/code --profile work"
+alias code@chris="/mnt/c/Program\ Files/Microsoft\ VS\ Code/bin/code --profile chrisguest75"

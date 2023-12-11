@@ -125,3 +125,7 @@ eval "$(pyenv init -)"
 export NVM_DIR="$HOME/.nvm"
 [ -s "/home/linuxbrew/.linuxbrew/opt/nvm/nvm.sh" ] && \. "/home/linuxbrew/.linuxbrew/opt/nvm/nvm.sh"  # This loads nvm
 [ -s "/home/linuxbrew/.linuxbrew/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/home/linuxbrew/.linuxbrew/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
+
+alias code="echo 'Use code@work or code@chris for required profiles'"
+alias code@work="/mnt/c/Program\ Files/Microsoft\ VS\ Code/bin/code --profile work"
+alias code@chris="/mnt/c/Program\ Files/Microsoft\ VS\ Code/bin/code --profile chrisguest75"
