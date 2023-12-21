@@ -8,6 +8,7 @@ Template dotfiles repository, managed with [chezmoi](https://chezmoi.io/).
   - [Contents](#contents)
   - [Testing](#testing)
   - [Steps](#steps)
+    - [Steps (linux)](#steps-linux)
     - [Steps (windows)](#steps-windows)
     - [Steps (wsl)](#steps-wsl)
     - [Steps (local)](#steps-local)
@@ -24,17 +25,30 @@ NOTES:
 TODO:
 
 * Vscode extensions
-* choco software.
 * Install in container (add ssh)
 * Devcontainer
 * Want it to work on mac, windows and linux
-* Secrets
+  * Windows
+    * choco software.
+  * Linux
+    * Couldn't find brew
+    * Terminal doesn't seem to use user shell
+* Secrets - 1password
 
 ## Testing
 
 REF: Installing distros for testing [chrisguest75/sysadmin_examples/34_WSL/INSTALL_DISTRO.md](https://github.com/chrisguest75/sysadmin_examples/blob/master/34_WSL/INSTALL_DISTRO.md)  
 
 ## Steps
+
+### Steps (linux)
+
+```sh
+apt install curl
+
+# install configuration
+sh -c "$(curl -fsLS get.chezmoi.io)" -- init --apply chrisguest75/chezmoi_dotfiles
+```
 
 ### Steps (windows)
 
@@ -58,7 +72,6 @@ choco install chezmoi
 1) Install `homebrew` [Instructions Here](https://brew.sh/
 ) and [Configuration Here](https://docs.brew.sh/Homebrew-on-Linux)  
 1) Install `chezmoi` [Instructions Here](https://www.chezmoi.io/install/)  
-
 
 NOTE: To access this folder on windows in `vscode` you'll need to install remote development extension.  
 
