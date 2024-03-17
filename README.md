@@ -47,7 +47,7 @@ REF: Installing distros for testing [chrisguest75/sysadmin_examples/34_WSL/INSTA
 ```sh
 apt install curl
 
-# install configuration
+# install configuration (press return for name and email)
 sh -c "$(curl -fsLS get.chezmoi.io)" -- init --apply chrisguest75/chezmoi_dotfiles
 
 # reapply
