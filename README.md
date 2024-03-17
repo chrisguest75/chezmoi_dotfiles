@@ -21,6 +21,7 @@ NOTES:
 
 * Handles all major platforms; Linux, Windows, WSL and Darwin.
 * Be careful when writing templates that they still shebangs.  
+* Once installed on WSL run `code@chris` and it will install code.  
 
 TODO:
 
@@ -33,8 +34,6 @@ TODO:
   * Linux
     * Terminal doesn't seem to use user shell
 * Secrets - 1password
-* Nix installer
-* 
 
 ## Testing
 
@@ -60,7 +59,6 @@ chezmoi update
 choco install chezmoi
 
 chezmoi data
-
 ```
 
 ### Steps (wsl)

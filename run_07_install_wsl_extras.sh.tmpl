@@ -1,0 +1,15 @@
+{{ if eq .chezmoi.os "linux" -}}
+#!/bin/bash
+set -eu
+
+{{   if (.chezmoi.kernel.osrelease | lower | contains "microsoft") }}
+    # WSL-specific code
+    echo "**************************************************************"
+    echo "** Installing WSL Extras"
+    echo "**************************************************************"
+    sudo add-apt-repository ppa:wslutilities/wslu
+    sudo apt update
+    sudo apt install wslu
+
+{{   end }}
+{{ end }}
