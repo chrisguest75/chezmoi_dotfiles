@@ -12,6 +12,7 @@ brew 'git-extras'
 # ensure later versions 
 brew 'bash'
 brew 'wget'
+brew 'hurl'
 brew 'curl'
 brew 'htop'
 brew 'btop'

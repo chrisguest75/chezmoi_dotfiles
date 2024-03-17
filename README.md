@@ -31,9 +31,10 @@ TODO:
   * Windows
     * choco software.
   * Linux
-    * Couldn't find brew
     * Terminal doesn't seem to use user shell
 * Secrets - 1password
+* Nix installer
+* 
 
 ## Testing
 
@@ -48,6 +49,9 @@ apt install curl
 
 # install configuration
 sh -c "$(curl -fsLS get.chezmoi.io)" -- init --apply chrisguest75/chezmoi_dotfiles
+
+# reapply
+chezmoi update
 ```
 
 ### Steps (windows)
