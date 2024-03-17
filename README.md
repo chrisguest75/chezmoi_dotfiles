@@ -28,6 +28,8 @@ TODO:
 * Vscode extensions
 * Install in container (add ssh)
 * Devcontainer
+* ssh keys - have to copy from windows at the mo'
+* It seems to be tracking oh-my-zsh/cache files
 * Want it to work on mac, windows and linux
   * Windows
     * choco software.
