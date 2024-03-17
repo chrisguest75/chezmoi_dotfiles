@@ -25,7 +25,6 @@ brew 'git'
 brew 'imagemagick'
 
 brew 'jq'
-brew 'jqp'
 brew 'yq'
 
 brew 'dive'
@@ -40,7 +39,7 @@ brew 'terraform-docs'
 brew 'kubectx'
 brew 'skaffold'
 brew 'kubernetes-cli'
-brew 'kubernetes-helm'
+brew 'helm'
 brew 'k9s'
 
 brew 'pyenv'
@@ -59,11 +58,10 @@ brew 'gpg'
 brew 'ssh-copy-id'
 brew 'watch'
 
-brew "romkatv/powerlevel10k/powerlevel10k"
+brew "powerlevel10k"
 
 brew 'kind'
 brew 'youtube-dl'
 brew 'gomplate'
-
 
 brew 'just'

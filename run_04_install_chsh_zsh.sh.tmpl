@@ -1,6 +1,8 @@
-{{ if (eq .chezmoi.os "darwin" "linux") -}}
+{{ if (eq .chezmoi.os "linux") -}}
 #!/bin/bash
 set -eu
+
+# TODO: This should be made to work on darwin as well
 
 ZSH_BIN_PATH=/home/linuxbrew/.linuxbrew/Cellar/zsh/5.9/bin/zsh 
 

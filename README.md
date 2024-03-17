@@ -54,11 +54,15 @@ sh -c "$(curl -fsLS get.chezmoi.io)" -- init --apply chrisguest75/chezmoi_dotfil
 
 ```powershell
 choco install chezmoi
+
+chezmoi data
+
 ```
 
 ### Steps (wsl)
 
 ```sh
+# this script downloads and applies
 ./install.sh
 
 # show data (this is the data structure that you can make decisions on)
@@ -109,7 +113,7 @@ https://github.com/twpayne/chezmoi/discussions/1733
 https://learn.microsoft.com/en-us/linux/packages#how-to-use-the-gpg-repository-signing-key
 
 
-### Examples 
+### Examples
 
 * kolvin/dotfiles repo [here](https://github.com/kolvin/dotfiles)  
 * twpayne/dotfiles repo [here](https://github.com/twpayne/dotfiles
