@@ -11,6 +11,8 @@ Template dotfiles repository, managed with [chezmoi](https://chezmoi.io/).
     - [Steps (linux)](#steps-linux)
     - [Steps (windows)](#steps-windows)
     - [Steps (wsl)](#steps-wsl)
+    - [Steps (docker)](#steps-docker)
+    - [Steps (devcontainer)](#steps-devcontainer)
     - [Steps (local)](#steps-local)
   - [Adding files](#adding-files)
   - [Resources](#resources)
@@ -73,6 +75,18 @@ chezmoi data
 /home/chrisguest/.local/bin/chezmoi data
 
 /home/chrisguest/.local/bin/chezmoi data | jq .chezmoi
+```
+
+### Steps (docker)
+
+Goto [tests/docker/README.md](./tests/docker/README.md)  
+
+### Steps (devcontainer)
+
+* Open in devcontainer  
+
+```sh
+sh -c "$(curl -fsLS get.chezmoi.io)" -- init --apply chrisguest75/chezmoi_dotfiles
 ```
 
 ### Steps (local)

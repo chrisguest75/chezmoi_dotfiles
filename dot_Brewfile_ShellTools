@@ -1,6 +1,3 @@
-tap 'romkatv/powerlevel10k'
-
-
 brew 'zsh'
 brew 'zsh-completions'
 
@@ -64,8 +61,6 @@ brew 'gpg'
 brew 'ssh-copy-id'
 brew 'watch'
 
-brew "powerlevel10k"
-
 brew 'kind'
 brew 'youtube-dl'
 brew 'gomplate'
@@ -76,3 +71,7 @@ brew 'chezmoi'
 
 brew 'pre-commit'
 brew 'dos2unix'
+
+
+tap 'romkatv/powerlevel10k'
+brew "powerlevel10k"

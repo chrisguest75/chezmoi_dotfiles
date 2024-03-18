@@ -7,6 +7,7 @@ echo "** Install APT Packages"
 echo "***********************************"
 
 # NOTE: Will require sudo
+# TODO: Determine if running in docker to remove need for sudo
 DEBIAN_FRONTEND=noninteractive sudo apt-get update && sudo apt-get install --yes build-essential procps curl file git libssl-dev zlib1g-dev libbz2-dev libreadline-dev libsqlite3-dev libncursesw5-dev xz-utils tk-dev libxml2-dev libxmlsec1-dev libffi-dev liblzma-dev
 
 {{- end }}
