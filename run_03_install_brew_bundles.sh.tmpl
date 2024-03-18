@@ -16,6 +16,8 @@ test -f /usr/local/bin/brew && eval "$(/usr/local/bin/brew shellenv)"
 export HOMEBREW_BUNDLE_FILE="$HOME/.Brewfile_ShellTools"
 export HOMEBREW_BUNDLE_NO_LOCK=true
 
+brew install ruby
+
 # Install brew bundles
 brew bundle install
 {{- end }}
