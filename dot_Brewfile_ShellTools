@@ -31,6 +31,7 @@ brew 'yq'
 brew 'dive'
 brew 'container-diff'
 brew 'container-structure-test'
+brew 'oras'
 
 brew 'awscli'
 
@@ -42,9 +43,13 @@ brew 'skaffold'
 brew 'kubernetes-cli'
 brew 'helm'
 brew 'k9s'
+brew 'yamllint'
+
 
 brew 'pyenv'
 brew 'pipenv'
+brew 'poetry'
+brew 'cookiecutter'
 
 brew 'nvm'
 
@@ -68,3 +73,6 @@ brew 'gomplate'
 brew 'just'
 
 brew 'chezmoi'
+
+brew 'pre-commit'
+brew 'dos2unix'
