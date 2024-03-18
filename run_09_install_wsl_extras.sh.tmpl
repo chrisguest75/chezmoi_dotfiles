@@ -7,9 +7,9 @@ set -eu
     echo "**************************************************************"
     echo "** Installing WSL Extras"
     echo "**************************************************************"
-    sudo add-apt-repository ppa:wslutilities/wslu
+    sudo add-apt-repository --yes ppa:wslutilities/wslu
     sudo apt update
-    sudo apt install wslu
+    sudo apt install -y wslu
 
 {{   end }}
 {{ end }}
