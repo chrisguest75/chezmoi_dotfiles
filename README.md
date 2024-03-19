@@ -16,6 +16,10 @@ Template dotfiles repository, managed with [chezmoi](https://chezmoi.io/).
     - [Steps (local)](#steps-local)
   - [Adding files](#adding-files)
   - [Resources](#resources)
+    - [Chezmoi](#chezmoi)
+    - [Brew](#brew)
+    - [WSL](#wsl)
+    - [Fonts](#fonts)
     - [Examples](#examples)
   - [License](#license)
 
@@ -27,6 +31,7 @@ NOTES:
 
 TODO:
 
+* Currently getting segfaults from linuxbrew ruby on my main machine.  
 * Vscode extensions
 * Install in container (add ssh)
 * Devcontainer
@@ -86,6 +91,7 @@ Goto [tests/docker/README.md](./tests/docker/README.md)
 * Open in devcontainer  
 
 ```sh
+# simulate installation
 sh -c "$(curl -fsLS get.chezmoi.io)" -- init --apply chrisguest75/chezmoi_dotfiles
 ```
 
@@ -114,25 +120,32 @@ chezmoi --debug diff
 
 ## Resources
 
+### Chezmoi
+
 * Documentation for Chezmoi [here](https://www.chezmoi.io/)  
 * Cloned from chezmoi/dotfiles [here](https://github.com/chezmoi/dotfiles)
 * How To Manage Dotfiles With Chezmoi [here](https://jerrynsh.com/how-to-manage-dotfiles-with-chezmoi/)
-* Detect Windows Subsystem for Linux (WSL) [here](https://www.chezmoi.io/user-guide/machines/windows/)
-* Understand chezmoi's files and directories [here](https://www.chezmoi.io/user-guide/setup/#understand-chezmois-files-and-directories)
-* Shit Hot Dotfiles [here](https://kolv.in/posts/dotfile-managment)
-* Meslo Nerd Font patched for Powerlevel10k [here](https://github.com/romkatv/powerlevel10k#meslo-nerd-font-patched-for-powerlevel10k)
-* Developing in WSL [here](https://code.visualstudio.com/docs/remote/wsl)
 * Use scripts to perform actions [here](https://www.chezmoi.io/user-guide/use-scripts-to-perform-actions/) 
 * Managing Dotfiles With Chezmoi [here](https://budimanjojo.com/2021/12/13/managing-dotfiles-with-chezmoi/)
+* Using it to deploy software? https://github.com/twpayne/chezmoi/discussions/1733
+* https://learn.microsoft.com/en-us/linux/packages#how-to-use-the-gpg-repository-signing-key
 
-Using it to deploy software?
-https://github.com/twpayne/chezmoi/discussions/1733
+### Brew
 
-https://learn.microsoft.com/en-us/linux/packages#how-to-use-the-gpg-repository-signing-key
+* https://github.com/Homebrew/homebrew-core
 
+### WSL
+
+* Developing in WSL [here](https://code.visualstudio.com/docs/remote/wsl)
+* Understand chezmoi's files and directories [here](https://www.chezmoi.io/user-guide/setup/#understand-chezmois-files-and-directories)
+
+### Fonts
+
+* Meslo Nerd Font patched for Powerlevel10k [here](https://github.com/romkatv/powerlevel10k#meslo-nerd-font-patched-for-powerlevel10k)
 
 ### Examples
 
+* Shit Hot Dotfiles [here](https://kolv.in/posts/dotfile-managment)
 * kolvin/dotfiles repo [here](https://github.com/kolvin/dotfiles)  
 * twpayne/dotfiles repo [here](https://github.com/twpayne/dotfiles
 * jasonmorganson/dotfiles repo [here](https://github.com/jasonmorganson/dotfiles)

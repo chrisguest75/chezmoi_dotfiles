@@ -2,6 +2,10 @@
 
 Demonstrates configuring using chezmoi for `bash` and `zsh` inside a container.  
 
+TODO:
+
+* This currently fails because of the use of sudo in a container that does not support it.  
+
 ## 🏠 Build
 
 ```sh
