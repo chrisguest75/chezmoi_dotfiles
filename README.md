@@ -31,7 +31,7 @@ NOTES:
 
 TODO:
 
-* Currently getting segfaults from linuxbrew ruby on my main machine.  
+* Currently getting segfaults from linuxbrew ruby on my main machine https://github.com/Homebrew/homebrew-core/issues/166575.  
 * Vscode extensions
 * Install in container (add ssh)
 * Devcontainer

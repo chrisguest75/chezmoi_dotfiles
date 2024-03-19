@@ -3,7 +3,7 @@
 set -eu
 
 echo "***********************************"
-echo "** Install Zsh"
+echo "** Install Zsh and chezmoi"
 echo "***********************************"
 
 # Homebrew
@@ -12,7 +12,10 @@ test -d /home/linuxbrew/.linuxbrew && eval "$(/home/linuxbrew/.linuxbrew/bin/bre
 test -d /opt/homebrew && eval "$(/opt/homebrew/bin/brew shellenv)"
 test -f /usr/local/bin/brew && eval "$(/usr/local/bin/brew shellenv)"
 
-# Install brew bundles
+# Install zsh
 brew install zsh
+
+# If we bail early we can continue.
+brew install chezmoi
 
 {{- end }}

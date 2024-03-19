@@ -67,11 +67,8 @@ brew 'gomplate'
 
 brew 'just'
 
-brew 'chezmoi'
-
 brew 'pre-commit'
 brew 'dos2unix'
-
 
 tap 'romkatv/powerlevel10k'
 brew "powerlevel10k"
