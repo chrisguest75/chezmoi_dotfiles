@@ -58,8 +58,12 @@ apt install curl
 # install configuration (press return for name and email)
 sh -c "$(curl -fsLS get.chezmoi.io)" -- init --apply chrisguest75/chezmoi_dotfiles
 
-# reapply
+# reapply from repo
 chezmoi update
+
+# apply from local changes
+chezmoi source-path
+chezmoi apply 
 ```
 
 ### Steps (windows)
