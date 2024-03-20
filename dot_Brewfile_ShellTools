@@ -1,13 +1,21 @@
 brew 'zsh'
 brew 'zsh-completions'
+brew 'bash'
 
 brew 'shellcheck'
 brew 'bats-core'
+
+# git
+brew 'git'
 brew 'gh'
 brew 'git-extras'
+brew 'glab'
+brew 'gpg'
+brew 'ssh-copy-id'
+brew 'pre-commit'
+brew 'dos2unix'
 
 # ensure later versions 
-brew 'bash'
 brew 'wget'
 brew 'hurl'
 brew 'curl'
@@ -18,13 +26,11 @@ brew 'bmon'
 brew 'tmux'
 brew 'tmuxinator'    
 
-brew 'git'
-
-brew 'imagemagick'
 
 brew 'jq'
 brew 'yq'
 
+# containers
 brew 'dive'
 brew 'container-diff'
 brew 'container-structure-test'
@@ -32,42 +38,41 @@ brew 'oras'
 
 brew 'awscli'
 
+# terraform
 brew 'tfenv'
 brew 'terraform-docs'
 
+# kubernetes
 brew 'kubectx'
 brew 'skaffold'
 brew 'kubernetes-cli'
 brew 'helm'
 brew 'k9s'
 brew 'yamllint'
+brew 'kind'
 
-
+# python
 brew 'pyenv'
 brew 'pipenv'
 brew 'poetry'
 brew 'cookiecutter'
+brew 'tcl-tk'
 
+# node
 brew 'nvm'
 
-brew 'nmap'
-
+# media
 brew 'ffmpeg'
+brew 'imagemagick'
 
-brew 'glab'
-brew 'hurl'
 
-brew 'gpg'
-brew 'ssh-copy-id'
+brew 'nmap'
 brew 'watch'
 
-brew 'kind'
 brew 'gomplate'
 
 brew 'just'
 
-brew 'pre-commit'
-brew 'dos2unix'
 
 tap 'romkatv/powerlevel10k'
 brew "powerlevel10k"
