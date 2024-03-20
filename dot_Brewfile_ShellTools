@@ -62,7 +62,6 @@ brew 'ssh-copy-id'
 brew 'watch'
 
 brew 'kind'
-brew 'youtube-dl'
 brew 'gomplate'
 
 brew 'just'

@@ -8,6 +8,37 @@ echo "***********************************"
 
 # NOTE: Will require sudo
 # TODO: Determine if running in docker to remove need for sudo
-DEBIAN_FRONTEND=noninteractive sudo apt-get update && sudo apt-get install --yes build-essential procps curl file git libssl-dev zlib1g-dev libbz2-dev libreadline-dev libsqlite3-dev libncursesw5-dev xz-utils tk-dev libxml2-dev libxmlsec1-dev libffi-dev liblzma-dev
+DEBIAN_FRONTEND=noninteractive sudo apt-get update
+
+
+DEBIAN_FRONTEND=noninteractive sudo apt-get install --yes \
+    build-essential \
+    procps \
+    curl \
+    file \
+    git
+
+DEBIAN_FRONTEND=noninteractive sudo apt install --yes \
+    build-essential \
+    curl \
+    libbz2-dev \
+    libffi-dev \
+    liblzma-dev \
+    libncursesw5-dev \
+    libreadline-dev \
+    libsqlite3-dev \
+    libssl-dev \
+    libxml2-dev \
+    libxmlsec1-dev \
+    llvm \
+    make \
+    tk-dev \
+    wget \
+    xz-utils \
+    zlib1g-dev \
+    python-tk \
+    python3-tk \
+    libb2-1 \
+    libb2-dev 
 
 {{- end }}
