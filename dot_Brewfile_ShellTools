@@ -13,6 +13,7 @@ brew 'glab'
 brew 'gpg'
 brew 'ssh-copy-id'
 brew 'pre-commit'
+brew 'commitizen'
 brew 'dos2unix'
 
 # ensure later versions 
