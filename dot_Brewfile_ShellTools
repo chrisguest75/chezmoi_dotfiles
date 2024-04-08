@@ -33,7 +33,7 @@ brew 'yq'
 
 # containers
 brew 'dive'
-brew 'container-diff'
+# brew 'container-diff'
 brew 'container-structure-test'
 brew 'oras'
 
