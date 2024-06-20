@@ -1,14 +1,14 @@
-# from cat /etc/os-release
+#!/bin/bash
+set -eu
 {{ if (eq .chezmoi.os "linux") -}}
 
 {{   if eq .chezmoi.osRelease.id "debian" }}
 
 {{     if ne .chezmoi.osRelease.version_id "24.04" }}
 
-#!/bin/bash
-set -eu
-
 # TODO: Install on darwin and install terminal icons.  
+# https://github.com/orgs/PowerShell/projects/23/views/1?pane=issue&itemId=57898280
+# from cat /etc/os-release
 
 echo "***********************************"
 echo "** Install Powershell"
