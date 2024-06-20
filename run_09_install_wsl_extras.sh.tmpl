@@ -1,8 +1,12 @@
-{{ if eq .chezmoi.os "linux" -}}
 #!/bin/bash
 set -eu
+{{ if (eq .chezmoi.os "linux") -}}
 
-{{   if (.chezmoi.kernel.osrelease | lower | contains "microsoft") }}
+{{   if eq .chezmoi.osRelease.id "debian" }}
+
+{{     if ne .chezmoi.osRelease.version_id "24.04" }}
+
+{{       if (.chezmoi.kernel.osrelease | lower | contains "microsoft") }}
     # WSL-specific code
     echo "**************************************************************"
     echo "** Installing WSL Extras"
@@ -11,5 +15,7 @@ set -eu
     sudo apt update
     sudo apt install -y wslu
 
+{{       end }}
+{{     end }}
 {{   end }}
 {{ end }}
