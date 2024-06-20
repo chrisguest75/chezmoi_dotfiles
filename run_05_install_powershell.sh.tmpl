@@ -1,4 +1,10 @@
+# from cat /etc/os-release
 {{ if (eq .chezmoi.os "linux") -}}
+
+{{   if eq .chezmoi.osRelease.id "debian" }}
+
+{{     if ne .chezmoi.osRelease.version_id "24.04" }}
+
 #!/bin/bash
 set -eu
 
@@ -43,5 +49,8 @@ brew install jandedobbeleer/oh-my-posh/oh-my-posh
 
 # install terminal icons
 pwsh  -NoProfile -ExecutionPolicy Bypass -Command "Install-Module -Name Terminal-Icons -Repository PSGallery"
+{{     end }}
+
+{{   end }}
 
 {{- end }}
